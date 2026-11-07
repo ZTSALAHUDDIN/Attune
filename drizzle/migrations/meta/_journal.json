@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791082924800,
+      "tag": "0000_create_learning_sessions_and_preferences",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791256916024,
+      "tag": "0001_adaptive_learning",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792225847607,
+      "tag": "0002_study_motivation_and_techniques",
+      "breakpoints": true
+    }
+  ]
+}

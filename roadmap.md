@@ -1,0 +1,7 @@
+- [x] Show alternative YouTube lessons inside the study page; live search returned six results
+- [x] Improve automatic captions and remove manual transcript entry; YouTube withheld captions for the tested video
+- [x] Fix study technique editing and timer transitions; targeted timer tests pass
+- [x] Improve streak calendar and weekly progress
+- [x] Keep camera check-ins student-reported and quizzes grounded in retrieved transcripts
+- [x] Run focused verification: 15 tests passed, current build OK, sign-in page has no runtime errors
+- [ ] Verify saved preferences and embedded playback signed in; blocked until the user signs in to the preview

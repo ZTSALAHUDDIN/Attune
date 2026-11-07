@@ -1,0 +1,4 @@
+ALTER TABLE public.learning_preferences ADD COLUMN IF NOT EXISTS motivation text NOT NULL DEFAULT '', ADD COLUMN IF NOT EXISTS study_technique text NOT NULL DEFAULT 'pomodoro', ADD COLUMN IF NOT EXISTS focus_minutes integer NOT NULL DEFAULT 25, ADD COLUMN IF NOT EXISTS break_minutes integer NOT NULL DEFAULT 5;
+ALTER TABLE public.learning_preferences ADD CONSTRAINT motivation_length CHECK (char_length(motivation) <= 500), ADD CONSTRAINT valid_study_technique CHECK (study_technique IN ('short','pomodoro','long','custom')), ADD CONSTRAINT valid_focus_minutes CHECK (focus_minutes BETWEEN 1 AND 180), ADD CONSTRAINT valid_break_minutes CHECK (break_minutes BETWEEN 1 AND 60);
+ALTER TABLE public.learning_sessions ADD COLUMN IF NOT EXISTS transcript text NOT NULL DEFAULT '';
+ALTER TABLE public.quiz_answers ADD COLUMN IF NOT EXISTS selected_answer text NOT NULL DEFAULT '';
